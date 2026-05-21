@@ -1,5 +1,7 @@
 # 星舰 Starship 展示站
 
+> 仓库：[mcjcdsa/starship-html](https://github.com/mcjcdsa/starship-html) · 星舰发射时序表
+
 发射倒计时、飞行时序、飞行器名录、封路海滩与 Starbase 发射场地图。
 
 ## 推荐运行方式
@@ -90,3 +92,5 @@ npx --yes serve _site -l 3000
 | 本地 `npm run start` | 可连接 `localhost:3847` 实时监测 |
 
 可选：在仓库根目录添加 `CNAME` 文件（仅一行你的自定义域名），并在 DNS 配置指向 GitHub Pages。
+
+**线上地址：** https://mcjcdsa.github.io/starship-html/
