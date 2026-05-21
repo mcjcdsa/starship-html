@@ -1,0 +1,25 @@
+{
+  "starships": [
+    { "id": "Ship 39", "variant": "v3", "status": "active", "flights": ["Flight 12"], "note": "第12次试飞上级，将部署22颗Starlink模拟卫星" },
+    { "id": "Ship 33", "variant": "v2", "status": "retired", "flights": ["Flight 11"], "note": "成功海上溅落" },
+    { "id": "Ship 30", "variant": "v2", "status": "retired", "flights": ["Flight 10"], "note": "首次塔架捕获尝试" },
+    { "id": "Ship 28", "variant": "v2", "status": "retired", "flights": ["Flight 9"], "note": "" },
+    { "id": "Ship 25", "variant": "v2", "status": "retired", "flights": ["Flight 8"], "note": "" },
+    { "id": "Ship 24", "variant": "v1", "status": "retired", "flights": ["Flight 7"], "note": "首次轨道级试飞" },
+    { "id": "SN15", "variant": "SN", "status": "museum", "flights": ["Flight 4"], "note": "首次成功软着陆" }
+  ],
+  "boosters": [
+    { "id": "Booster 19", "variant": "v3", "status": "active", "flights": ["Flight 12"], "note": "首次v3助推器，计划海上溅落" },
+    { "id": "Booster 12", "variant": "v2", "status": "retired", "flights": ["Flight 11"], "note": "塔架捕获成功" },
+    { "id": "Booster 11", "variant": "v2", "status": "retired", "flights": ["Flight 10"], "note": "" },
+    { "id": "Booster 9", "variant": "v2", "status": "retired", "flights": ["Flight 8", "Flight 9"], "note": "" },
+    { "id": "Booster 7", "variant": "v1", "status": "retired", "flights": ["Flight 7"], "note": "首次飞行" }
+  ],
+  "specs": {
+    "height": "124.4 m",
+    "diameter": "9 m",
+    "thrust": "80,800 kN",
+    "leo": "100,000 kg",
+    "stages": 2
+  }
+}

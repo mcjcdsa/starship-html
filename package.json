@@ -1,0 +1,14 @@
+{
+  "name": "starship-timeline",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes serve . -l 3000",
+    "monitor": "node monitor-server.js",
+    "start": "node monitor-server.js",
+    "build:data": "node scripts/build-data.js",
+    "build:pages": "node scripts/build-data.js && node scripts/prepare-pages.js",
+    "sync:closures": "node scripts/sync-closures.js",
+    "test-parse": "node test-parse.js"
+  }
+}

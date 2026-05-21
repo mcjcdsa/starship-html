@@ -1,0 +1,39 @@
+{
+  "beachAccess": {
+    "title": "BEACH Access Status",
+    "subtitle": "Boca Chica Beach closures.",
+    "source": "https://www.starbase.texas.gov/beach-road-access",
+    "sourceLabel": "starbase.texas.gov · Beach Road Access",
+    "windows": [
+      {
+        "label": "Primary",
+        "range": "May. 21 6:00 AM to May. 21 11:00 PM"
+      },
+      {
+        "label": "Primary",
+        "range": "May. 22 10:00 AM to May. 22 9:00 PM"
+      }
+    ],
+    "fetchedAt": "2026-05-21T15:00:38.527Z"
+  },
+  "roadUpdates": {
+    "title": "Road Updates",
+    "message": "No road delays.",
+    "status": "clear",
+    "fetchedAt": "2026-05-21T15:00:38.529Z"
+  },
+  "items": [
+    {
+      "id": 1,
+      "status": "scheduled",
+      "title": "发射测试封路（Flight 12）",
+      "reason": "发射测试 / 海滩关闭",
+      "start": "2026-05-21T18:00:00-05:00",
+      "end": "2026-05-22T10:00:00-05:00",
+      "roads": "Boca Chica Beach, Highway 4 部分路段",
+      "beach": "关闭",
+      "note": "星舰第12次试飞窗口期间，请留意官方公告。",
+      "source": "https://www.starbase.texas.gov/beach-road-access"
+    }
+  ]
+}

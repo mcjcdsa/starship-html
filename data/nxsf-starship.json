@@ -1,0 +1,111 @@
+{
+  "source": "https://www.nextspaceflight.com/starship/",
+  "weather": {
+    "location": "Starbase, Texas",
+    "time": "09:08",
+    "date": "May 21, 2026",
+    "condition": "moderate rain",
+    "tempF": 70,
+    "windKnots": 8
+  },
+  "flight12": {
+    "title": "Starship Flight 12",
+    "vehicle": "Starship-Super Heavy v3",
+    "site": "Starbase, Texas, USA",
+    "liftoffLocal": "Today, 22:30",
+    "checklistDone": 20,
+    "checklistTotal": 20,
+    "summary": "Flight 12 will be the first flight of version 3 of Starship and the first flight from Starbase Pad 2.",
+    "watchUrl": "https://www.youtube.com/watch?v=TBu6JFjt0tk",
+    "detailUrl": "https://www.nextspaceflight.com/launches/details/8002/"
+  },
+  "checklistItems": [
+    "Booster 19 Proof Campaign",
+    "Ship 39 Proof Campaign",
+    "Booster 19's Raptor 3 Engines Installed",
+    "Ship 39's Raptor 3 Engines Installed",
+    "Booster 19 Static Fire Campaign",
+    "Ship 39 Static Fire Campaign",
+    "Confirmation from SpaceX",
+    "Booster 19 at Launch Site",
+    "Ship 39 at Launch Site",
+    "Vehicles Stacked",
+    "FAA Operations Advisory",
+    "COMPASS Airspace Advisory",
+    "Notice To Air Mission (NOTAM) for Launch",
+    "USCG Notice to Mariners (NOTMAR) for Launch",
+    "NGA Notice to Mariners (NOTMAR) for Launch",
+    "Notice To Air Mission (NOTAM) for Ship Splashdown",
+    "NGA Notice to Mariners (NOTMAR) for Ship Splashdown",
+    "Temporary Flight Restriction (TFR)",
+    "Road Closure for Launch",
+    "Wet Dress Rehearsal (WDR)"
+  ],
+  "recentTests": [
+    {
+      "title": "Starship Flight 12 | Wet Dress Rehearsal (WDR)",
+      "date": "May 20, 2026",
+      "location": "Pad 2, Starbase, Texas, USA",
+      "vehicle": "Booster 19/Ship 39",
+      "flight": 12
+    },
+    {
+      "title": "Starship Flight 12 | Partial Tanking Test",
+      "date": "Wed May 20, 2026",
+      "location": "Pad 2, Starbase, Texas, USA",
+      "vehicle": "Booster 19/Ship 39",
+      "flight": 12
+    },
+    {
+      "title": "Ship 39 | Igniter Test",
+      "date": "Fri May 15, 2026",
+      "location": "Static Fire Stand, Massey Outpost, Texas, USA",
+      "vehicle": "Ship 39"
+    }
+  ],
+  "roadClosures": [
+    {
+      "title": "Beach and Road Closure",
+      "date": "21 May 2026",
+      "time": "6:00 AM to 11:00 PM",
+      "primary": true,
+      "note": "Times listed are local to Starbase, Texas. Closures can indicate a planned Starship test or transport."
+    },
+    {
+      "title": "Beach and Road Closure",
+      "date": "22 May 2026",
+      "time": "10:00 AM to 9:00 PM",
+      "primary": true,
+      "note": "Primary launch day closure window."
+    }
+  ],
+  "videos": [
+    { "title": "SpaceX Performs Second Wet Dress Rehearsal of First V3 Starship", "ago": "20 hours ago" },
+    { "title": "One final test before Starship Flight 12? - Countdown to Launch", "ago": "2 days ago" },
+    { "title": "One Last Test Before Launch? | Starship Update", "ago": "3 days ago" },
+    { "title": "POV: We Got Drenched by Pad 2's Deluge | SpaceX Starbase", "ago": "5 days ago" },
+    { "title": "Is Starship Flight 12 three days away? - Countdown to Launch", "ago": "5 days ago" }
+  ],
+  "hardware": [
+    { "id": "Ship 40", "type": "Ship", "category": "Test Vehicle", "status": "Active", "note": "v3 upper-stage prototype, expected on Flight 13" },
+    { "id": "Booster 19/Ship 39", "type": "Full Stack", "category": "Full Stack", "status": "Active", "note": "Set to launch on Starship Flight 12, first v3 full stack flight" },
+    { "id": "Ship 39", "type": "Ship", "category": "Test Vehicle", "status": "Active", "note": "First v3 Ship, slated for Flight 12" },
+    { "id": "Booster 19", "type": "Booster", "category": "Test Vehicle", "status": "Active", "note": "First v3 Booster, Flight 12, offshore splashdown planned" },
+    { "id": "Booster 18", "type": "Booster", "category": "Test Vehicle", "status": "Destroyed", "note": "First v3 Booster, failed during gas system test" },
+    { "id": "Booster 15/Ship 38", "type": "Full Stack", "category": "Full Stack", "status": "Expended", "note": "Starship Flight 11, last v2 stack" },
+    { "id": "Ship 38", "type": "Ship", "category": "Test Vehicle", "status": "Expended", "note": "Final v2 Ship, Flight 11" },
+    { "id": "Booster 17", "type": "Booster", "category": "Test Vehicle", "status": "Retired", "note": "Final v2 Super Heavy prototype" },
+    { "id": "Booster 16/Ship 37", "type": "Full Stack", "category": "Full Stack", "status": "Expended", "note": "Starship Flight 10" },
+    { "id": "Ship 37", "type": "Ship", "category": "Test Vehicle", "status": "Expended", "note": "First Ship to deploy Starlink simulators in flight" },
+    { "id": "Booster 16", "type": "Booster", "category": "Test Vehicle", "status": "Expended", "note": "Flight 10 booster" },
+    { "id": "Booster 12/Ship 30", "type": "Full Stack", "category": "Full Stack", "status": "Expended", "note": "Flight 5, first booster catch" },
+    { "id": "Booster 12", "type": "Booster", "category": "Test Vehicle", "status": "Retired", "note": "First successful chopstick catch" },
+    { "id": "Ship 30", "type": "Ship", "category": "Test Vehicle", "status": "Expended", "note": "Flight 5" },
+    { "id": "Booster 11/Ship 29", "type": "Full Stack", "category": "Full Stack", "status": "Expended", "note": "IFT-4" },
+    { "id": "Booster 10/Ship 28", "type": "Full Stack", "category": "Full Stack", "status": "Destroyed", "note": "Flight 3" },
+    { "id": "Booster 9/Ship 25", "type": "Full Stack", "category": "Full Stack", "status": "Destroyed", "note": "IFT-2" },
+    { "id": "Booster 7/Ship 24", "type": "Full Stack", "category": "Full Stack", "status": "Destroyed", "note": "First integrated launch" },
+    { "id": "Starship SN15", "type": "Ship", "category": "Test Vehicle", "status": "Retired", "note": "First prototype to softly land" },
+    { "id": "Starhopper", "type": "Ship", "category": "Test Vehicle", "status": "Retired", "note": "150m hop pathfinder" }
+  ]
+}

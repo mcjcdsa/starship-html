@@ -1,0 +1,574 @@
+{
+  "source": "NXSF Starship hardware (file 3)",
+  "updated": "2026-05-21",
+  "count": 63,
+  "hardware": [
+    {
+      "id": "40号船",
+      "title": "40号船",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Active",
+      "statusZh": "活跃",
+      "note": "40号飞船是一艘V3星舰上级原型。40号飞船预计将在星舰13号飞行中发射。"
+    },
+    {
+      "id": "助推器19/舰船39",
+      "title": "助推器19/舰船39号星舰载具",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Active",
+      "statusZh": "活跃",
+      "note": "助推器19号和39号飞船是星舰助推器和上面级，计划在星舰飞行12号中同时发射。这将是第一次飞行......"
+    },
+    {
+      "id": "船39号",
+      "title": "39号舰船，星舰载具",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Active",
+      "statusZh": "活跃",
+      "note": "39号飞船是星舰上级原型，是v3飞船变体中的第一个。39号飞船计划搭乘星舰12号航班发射。"
+    },
+    {
+      "id": "助推器19",
+      "title": "助推器19号星舰飞行器",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Active",
+      "statusZh": "活跃",
+      "note": "助推器19号是一辆超重型飞行器，计划搭载星舰12号飞行任务，这是星舰全堆放火箭v3变体的首次发射。Booste......"
+    },
+    {
+      "id": "助推器18",
+      "title": "助推器18星舰飞行器",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "助推器18是一款超重型载具，是v3助推器变体中的第一个。该助推器原本计划搭乘星舰12号飞行，但在气体系统中失效......"
+    },
+    {
+      "id": "助推器15/38号船",
+      "title": "助推器15/38号舰载具",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "助推器15号和38号飞船是星舰助推器和上面级，它们在星舰第11次飞行中同时发射。 这是版本的最后一次飞行......"
+    },
+    {
+      "id": "38号船",
+      "title": "38号飞船，星舰载具",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "38号飞船是星舰上级原型，也是最后一艘V2飞船，搭载于第11次星际飞船飞行中发射。"
+    },
+    {
+      "id": "助推器17",
+      "title": "助推器17号星舰飞行器",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "助推器17号是最后一款v2超级重型原型机，未执行任何任务。"
+    },
+    {
+      "id": "助推器16/37号船",
+      "title": "助推器16/37号飞船飞船",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "助推器16号和37号飞船是助推器和星舰上面级，在星舰10号飞行中同时发射。"
+    },
+    {
+      "id": "Ship 37",
+      "title": "Ship 37 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "Ship 37 was a Starship upper-stage prototype that launched on Starship Flight 10. During its flight, Ship 37 became the first Ship to deploy Starlink ..."
+    },
+    {
+      "id": "Booster 16",
+      "title": "Booster 16 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "Booster 16 was a Super Heavy vehicle that supported Starship Flight 10. Following stage separation, Booster 16 performed several experimental tests, i..."
+    },
+    {
+      "id": "Ship 36",
+      "title": "Ship 36 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Ship 36 was a Starship upper-stage prototype that exploded while preparing for a static fire at the Masseys test site. Ship 36 was intended to fly on ..."
+    },
+    {
+      "id": "Booster 14/Ship 35",
+      "title": "Booster 14/Ship 35 starship vehicle",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 14 and Ship 35 were the Super Heavy and Starship pair that launched Starship Flight 9."
+    },
+    {
+      "id": "Ship 35",
+      "title": "Ship 35 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Ship 35 was a Starship upper-stage prototype that launched Starship Flight 9 and was the first V2 ship to successfully reach SECO."
+    },
+    {
+      "id": "Booster 15/Ship 34",
+      "title": "Booster 15/Ship 34 starship vehicle",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 15 and Ship 34 were the Super Heavy and Starship pair that launched on Starship Flight 8."
+    },
+    {
+      "id": "Booster 15",
+      "title": "Booster 15 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "Booster 15 was a Super Heavy vehicle launched on Starship Flight 8 and successfully caught by the launch tower. Booster 15 was reflown and expended on..."
+    },
+    {
+      "id": "Ship 34",
+      "title": "Ship 34 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Ship 34 was a Starship upper-stage prototype that launched on Starship Flight 8. Similar to Ship 33, Ship 34 also experienced a RUD (rapid unscheduled..."
+    },
+    {
+      "id": "Booster 14/Ship 33",
+      "title": "Booster 14/Ship 33 starship vehicle",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 14 and Ship 33 were the Super Heavy and Starship pair launched on Starship Flight 7. Booster 14 was successfully caught by the launch tower's ..."
+    },
+    {
+      "id": "Booster 14",
+      "title": "Booster 14 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 14 was a Super Heavy vehicle launched on Starship Flight 7 and was successfully caught on the launch tower's chopstick arms. One of Booster 14..."
+    },
+    {
+      "id": "Ship 33",
+      "title": "Ship 33 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Ship 33 was the first next-gen Starship upper-stage prototype and launched on Starship Flight 7. Ship 33 experienced a RUD (rapid unscheduled disassem..."
+    },
+    {
+      "id": "Booster 13/Ship 31",
+      "title": "Booster 13/Ship 31 starship vehicle",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "Booster 13 and Ship 31 were the Super Heavy and Starship pair launched on Starship Flight 6."
+    },
+    {
+      "id": "Booster 13",
+      "title": "Booster 13 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 13 is a Super Heavy prototype launched in Starship Flight 6."
+    },
+    {
+      "id": "Ship 31",
+      "title": "Ship 31 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "Ship 31 is a Starship upper-stage prototype launched in Starship Flight 6. Ship 31 became the third Starship vehicle to successfully survive atmospher..."
+    },
+    {
+      "id": "Booster 12/Ship 30",
+      "title": "Booster 12/Ship 30 starship vehicle",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "Booster 12 and Ship 30 were the Super Heavy and Starship pair launched on Starship Flight 5. Booster 12 became the first booster to be caught successf..."
+    },
+    {
+      "id": "Booster 12",
+      "title": "Booster 12 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Booster 12 is a Super Heavy prototype launched on Starship Flight 5 and became the first booster to be successfully caught using the chopstick system ..."
+    },
+    {
+      "id": "Ship 30",
+      "title": "Ship 30 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "Ship 30 is a Starship upper-stage prototype launched on Starship Flight 5. Ship 30 became the second Starship vehicle to successfully survive atmosphe..."
+    },
+    {
+      "id": "Booster 11/Ship 29",
+      "title": "Booster 11/Ship 29 starship vehicle",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "Booster 11 and Ship 29 were the Super Heavy and Starship pair that launched the fourth integrated test flight. They became the first Booster and Ship ..."
+    },
+    {
+      "id": "Booster 11",
+      "title": "Booster 11 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "Booster 11 is a Super Heavy prototype that launched in Starship's fourth integrated flight test. Booster 11 became the first Super Heavy Booster to su..."
+    },
+    {
+      "id": "Ship 29",
+      "title": "Ship 29 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Expended",
+      "statusZh": "耗尽",
+      "note": "Ship 29 is a Starship upper-stage prototype that launched in Starship's fourth integrated flight test. Ship 29 became the first Starship vehicle to su..."
+    },
+    {
+      "id": "Booster 10/Ship 28",
+      "title": "Booster 10/Ship 28 starship vehicle",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 10 and Ship 28 were the Super Heavy and Starship pair that flew on Starship Flight 3."
+    },
+    {
+      "id": "Booster 10",
+      "title": "Booster 10 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 10 is a Super Heavy prototype launched on the third Starship flight test."
+    },
+    {
+      "id": "Ship 28",
+      "title": "Ship 28 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Ship 28 is a Starship upper-stage prototype launched on the third Starship flight test."
+    },
+    {
+      "id": "Ship 26",
+      "title": "Ship 26 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Ship 26 is a Starship prototype that served as a ground test article."
+    },
+    {
+      "id": "Booster 9/Ship 25",
+      "title": "Booster 9/Ship 25 starship vehicle",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 9 and Ship 25 were the Super Heavy and Starship pair that flew in Starship Flight Test 2."
+    },
+    {
+      "id": "Booster 9",
+      "title": "Booster 9 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 9 was a Super Heavy prototype. It was the first booster to feature electronic thrust vector control of the Raptor engines and was the first to..."
+    },
+    {
+      "id": "Ship 25",
+      "title": "Ship 25 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Ship 25 was a Starship prototype with a heatshield that launched along with Booster 9 on Starship's second integrated flight test. Its payload bay was..."
+    },
+    {
+      "id": "Booster 7/Ship 24",
+      "title": "Booster 7/Ship 24 starship vehicle",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 7 & Ship 24 were the Super Heavy and Starship pairing that flew on Starship's first integrated launch."
+    },
+    {
+      "id": "Ship 24",
+      "title": "Ship 24 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Ship 24 was the first Starship prototype to feature a payload door meant to deploy Starlink satellites. However, the payload door was later sealed shu..."
+    },
+    {
+      "id": "Booster 7.1",
+      "title": "Booster 7.1 starship vehicle",
+      "type": "Booster",
+      "category": "Structural Test Article",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Booster 7.1 is a structural test article that performs stress testing to verify the limits of the current Super Heavy design."
+    },
+    {
+      "id": "Booster 7",
+      "title": "Booster 7 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Booster 7 was the first Super Heavy vehicle to accommodate 33 Raptor engines and static aero surfaces. It was part of the first integrated Starship la..."
+    },
+    {
+      "id": "Booster 4/Ship 20",
+      "title": "Booster 4/Ship 20 starship vehicle",
+      "type": "Full Stack",
+      "category": "Full Stack",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Booster 4 and Ship 20 were the first vehicles to be assembled into a full Starship stack. Originally, they were slated as the vehicles for the first o..."
+    },
+    {
+      "id": "Ship 20",
+      "title": "Ship 20 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Ship 20 was the first Starship prototype to receive a full heat shield. It was also the first ship to be mated with a booster. Originally slated to be..."
+    },
+    {
+      "id": "Booster 4",
+      "title": "Booster 4 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Booster 4 was the first Super Heavy vehicle to be outfitted with 29 Raptor engines and four grid fins. Originally slated to be part of the first orbit..."
+    },
+    {
+      "id": "Booster 3",
+      "title": "Booster 3 starship vehicle",
+      "type": "Booster",
+      "category": "Test Vehicle",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Booster 3 is the first Super Heavy prototype to reach the launch site. It is expected to conduct proof testing and other tests on the ground but is no..."
+    },
+    {
+      "id": "B2.1",
+      "title": "B2.1 starship vehicle",
+      "type": "Booster",
+      "category": "Structural Test Article",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "B2.1 is a test vehicle made with a ship thrust dome and a booster aft skirt. The purpose of this unusual tank is not clear."
+    },
+    {
+      "id": "BN2.1",
+      "title": "BN2.1 starship vehicle",
+      "type": "Booster",
+      "category": "Structural Test Article",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "BN2.1 was a test tank designed to validate the structural soundness of the Super Heavy thrust section using cryogenic proof testing with thrust rams."
+    },
+    {
+      "id": "Starship SN15",
+      "title": "Starship SN15 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Starship SN15 was a prototype Starship vehicle that conducted a test flight to 10 kilometers in altitude. It became the first prototype to softly land..."
+    },
+    {
+      "id": "Starship SN12 Nosecone",
+      "title": "Starship SN12 Nosecone starship vehicle",
+      "type": "Ship",
+      "category": "Structural Test Article",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Starship SN12's nosecone was a test article that was used to characterize the performance limitations of the current nosecone design."
+    },
+    {
+      "id": "Starship SN11",
+      "title": "Starship SN11 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Starship SN11 was a prototype Starship vehicle that conducted a test flight to approximately 10 kilometers. During the landing burn, it experienced an..."
+    },
+    {
+      "id": "Starship SN10",
+      "title": "Starship SN10 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Starship SN10 was a prototype Starship vehicle that conducted a suborbital flight using three Raptor engines. SN10 was destroyed in an explosion a few..."
+    },
+    {
+      "id": "Starship SN9",
+      "title": "Starship SN9 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Starship SN9 was a test vehicle designed to attempt a high-altitude test flight similar to the one conducted by Starship SN8. SN9 tipped over while un..."
+    },
+    {
+      "id": "Starship SN8",
+      "title": "Starship SN8 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Starship SN8 was a test vehicle designed to perform a 12.5 km test flight. It became the first Starship to be outfitted with three Raptors (SN30, SN32..."
+    },
+    {
+      "id": "Starship SN7.2",
+      "title": "Starship SN7.2 starship vehicle",
+      "type": "Ship",
+      "category": "Structural Test Article",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "SN7.2 was a test tank design to test thinner 3mm stainless steel for future Starship prototypes. The tank performed two cryogenic proof tests to verif..."
+    },
+    {
+      "id": "Starship SN7.1",
+      "title": "Starship SN7.1 starship vehicle",
+      "type": "Ship",
+      "category": "Structural Test Article",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "The SN7.1 prototype was tested to failure at the end of its test campaign. The test article was used to validate new manufacturing techniques."
+    },
+    {
+      "id": "Starship SN7",
+      "title": "Starship SN7 starship vehicle",
+      "type": "Ship",
+      "category": "Structural Test Article",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Starship SN7 was a small prototype tank designed to test a new steel alloy (304L) and welding techniques. It was tested to destruction on two occasion..."
+    },
+    {
+      "id": "Starship SN6",
+      "title": "Starship SN6 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Starship SN6 successfully performed a 150-meter hop with Raptor SN29."
+    },
+    {
+      "id": "Starship SN5",
+      "title": "Starship SN5 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Starship SN5 was a Starship prototype that flew successfully to 150 meters – becoming the first full-scale tank section to fly. It was outfitted with ..."
+    },
+    {
+      "id": "Starship SN4",
+      "title": "Starship SN4 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Starship SN4 was the first full-scale tank section to pass a cryogenic proof test. It then went on to complete several successful static fires, before..."
+    },
+    {
+      "id": "Starship SN3",
+      "title": "Starship SN3 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Starship SN3 was lost during a cryogenic proof test. During the test, a lack of pressure in the LOX tank caused it to collapse under the weight of a f..."
+    },
+    {
+      "id": "Starship SN2",
+      "title": "Starship SN2 starship vehicle",
+      "type": "Ship",
+      "category": "Structural Test Article",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Starship SN2 was originally planned to be a full-scale Starship tank section which would conduct a hop to 150 meters. Following the loss of Starship S..."
+    },
+    {
+      "id": "Starship SN1",
+      "title": "Starship SN1 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Starship SN1 was a Starship prototype that popped during a cryogenic proof test. The vehicle's \"thrust puck\" was unable to withstand the forces of a ..."
+    },
+    {
+      "id": "Starship Mk1",
+      "title": "Starship Mk1 starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Destroyed",
+      "statusZh": "被毁",
+      "note": "Starship Mk1 was the first full-scale Starship prototype. A fairing was also built for it, but the fairing was not used during testing at the pad. The..."
+    },
+    {
+      "id": "Starhopper",
+      "title": "Starhopper starship vehicle",
+      "type": "Ship",
+      "category": "Test Vehicle",
+      "status": "Retired",
+      "statusZh": "退役",
+      "note": "Starhopper is a smaller-scale Starship prototype vehicle. It was a pathfinder used to help SpaceX gain experience with stainless steel. It performed t..."
+    }
+  ]
+}

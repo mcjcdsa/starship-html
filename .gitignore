@@ -1,0 +1,13 @@
+node_modules/
+_site/
+data/config-preview.json
+.DS_Store
+Thumbs.db
+*.log
+
+# 本地草稿与参考图（不参与 Pages 构建）
+1
+2
+3
+1779366628453.jpg
+data/vehicles-source-3.txt

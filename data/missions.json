@@ -1,0 +1,14 @@
+[
+  { "flight": 12, "date": "2026-05-22", "vehicle": "Starship-Super Heavy v3", "ship": "Ship 39", "booster": "Booster 19", "site": "Starbase Pad 2", "result": "待飞", "status": "upcoming", "url": "https://www.nextspaceflight.com/launches/details/8002/" },
+  { "flight": 11, "date": "2025-10-13", "vehicle": "Starship-Super Heavy v2", "ship": "Ship 33", "booster": "Booster 12", "site": "Starbase", "result": "成功溅落", "status": "success", "url": "https://www.nextspaceflight.com/launches/" },
+  { "flight": 10, "date": "2024-10-13", "vehicle": "Starship-Super Heavy", "ship": "Ship 30", "booster": "Booster 11", "site": "Starbase", "result": "成功溅落", "status": "success", "url": "https://www.nextspaceflight.com/launches/" },
+  { "flight": 9, "date": "2024-01-18", "vehicle": "Starship-Super Heavy", "ship": "Ship 28", "booster": "Booster 9", "site": "Starbase", "result": "成功溅落", "status": "success", "url": "https://www.nextspaceflight.com/launches/" },
+  { "flight": 8, "date": "2023-11-18", "vehicle": "Starship-Super Heavy", "ship": "Ship 25", "booster": "Booster 9", "site": "Starbase", "result": "成功溅落", "status": "success", "url": "https://www.nextspaceflight.com/launches/" },
+  { "flight": 7, "date": "2023-04-20", "vehicle": "Starship-Super Heavy", "ship": "Ship 24", "booster": "Booster 7", "site": "Starbase", "result": "部分成功", "status": "partial", "url": "https://www.nextspaceflight.com/launches/" },
+  { "flight": 6, "date": "2023-03-24", "vehicle": "Starship-Super Heavy", "ship": "Ship 24", "booster": "Booster 7", "site": "Starbase", "result": "未起飞", "status": "scrub", "url": "https://www.nextspaceflight.com/launches/" },
+  { "flight": 5, "date": "2023-04-20", "vehicle": "Starship-Super Heavy", "ship": "—", "booster": "Booster 7", "site": "Starbase", "result": "集成测试", "status": "test", "url": "https://www.nextspaceflight.com/launches/" },
+  { "flight": 4, "date": "2021-05-05", "vehicle": "Starship SN15", "ship": "SN15", "booster": "—", "site": "Starbase", "result": "着陆成功", "status": "success", "url": "https://www.nextspaceflight.com/launches/" },
+  { "flight": 3, "date": "2021-03-03", "vehicle": "Starship SN10", "ship": "SN10", "booster": "—", "site": "Starbase", "result": "着陆后爆炸", "status": "partial", "url": "https://www.nextspaceflight.com/launches/" },
+  { "flight": 2, "date": "2020-12-09", "vehicle": "Starship SN8", "ship": "SN8", "booster": "—", "site": "Starbase", "result": "着陆爆炸", "status": "partial", "url": "https://www.nextspaceflight.com/launches/" },
+  { "flight": 1, "date": "2019-07-25", "vehicle": "Starhopper", "ship": "Starhopper", "booster": "—", "site": "Starbase", "result": "150m 跳跃", "status": "success", "url": "https://www.nextspaceflight.com/launches/" }
+]

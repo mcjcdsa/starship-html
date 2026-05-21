@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>星舰 · Starship 一站式信息</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a href="#home" class="nav-brand" data-page="home">🚀 星舰 Starship</a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="#home" class="nav-tab active" data-page="home">主页</a>
+      <a href="#missions" class="nav-tab" data-page="missions">任务</a>
+      <a href="#vehicles" class="nav-tab" data-page="vehicles">飞行器</a>
+      <a href="#closures" class="nav-tab" data-page="closures">封路信息</a>
+    </nav>
+    <a class="nav-ext" href="https://www.nextspaceflight.com/starship/" target="_blank" rel="noopener">NXSF 星舰</a>
+  </header>
+
+  <!-- ========== 主页 ========== -->
+  <section id="page-home" class="page active">
+    <div class="home-hero">
+      <p class="hero-tag">SpaceX · 人类成为多行星物种</p>
+      <h1>星舰 Starship</h1>
+      <p class="home-lead">
+        星舰 + 超重型助推器（Super Heavy）是 SpaceX 研制的完全可复用两级运载火箭，
+        目标是将人员与货物送往地球轨道、月球与火星。博卡奇卡星基地（Starbase）是其主要发射与测试场。
+      </p>
+      <div class="home-hero-actions">
+        <span id="home-status" class="status-pill status-upcoming">待飞</span>
+        <span id="home-countdown" class="home-countdown-text">—</span>
+      </div>
+    </div>
+
+    <div class="home-grid">
+      <article class="home-card nxsf-weather-card" id="nxsf-weather"></article>
+
+      <article class="home-card home-card-featured">
+        <div class="home-card-visual">Flight 12</div>
+        <h2>Starship Flight 12</h2>
+        <p>v3 首次试飞 · Pad 2 · Ship 39 / Booster 19</p>
+        <p class="home-card-meta">清单 <strong id="home-checklist-pct">20/20</strong> · 22 颗 Starlink 模拟卫星</p>
+        <div id="home-flight12-extra"></div>
+        <div class="watch-links" id="watch-links-home"></div>
+        <div class="home-card-actions">
+          <button type="button" class="btn-primary" data-goto="missions">查看时序与倒计时</button>
+          <a class="btn-ghost" href="https://www.nextspaceflight.com/launches/details/8002/" target="_blank" rel="noopener">NXSF 详情</a>
+        </div>
+      </article>
+
+      <article class="home-card">
+        <h3>近期测试</h3>
+        <div id="nxsf-recent-tests" class="test-cards-mini"></div>
+      </article>
+
+      <article class="home-card home-card-wide">
+        <h3>视频动态</h3>
+        <div id="nxsf-videos"></div>
+      </article>
+
+      <article class="home-card">
+        <h3>快速入口</h3>
+        <ul class="quick-links">
+          <li><button type="button" data-goto="missions">⏱ 发射倒计时 & 时序表</button></li>
+          <li><button type="button" data-goto="missions">📋 历次飞行任务</button></li>
+          <li><button type="button" data-goto="vehicles">🛸 舰体 / 助推器编号</button></li>
+          <li><button type="button" data-goto="closures">🚧 封路 & 海滩关闭</button></li>
+        </ul>
+      </article>
+
+      <article class="home-card">
+        <h3>项目目标</h3>
+        <ul class="home-list">
+          <li>完全快速复用，降低进入太空成本</li>
+          <li>月球 Artemis、火星殖民长期目标</li>
+          <li>在轨加注与大规模星座部署</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== 任务 ========== -->
+  <section id="page-missions" class="page">
+    <div class="page-intro">
+      <h2>任务 · Missions <span class="flight-badge" id="active-flight-badge">Flight 12</span></h2>
+      <p>星舰发射流程、实时倒计时与完整飞行时序（T-50:00 ~ T+1:05:26）</p>
+      <p class="tz-banner" id="mission-tz-banner" aria-live="polite"></p>
+    </div>
+    <div id="monitor-offline-banner" class="monitor-offline-banner hidden" role="status" aria-live="polite"></div>
+
+    <div class="checklist-panel">
+      <div class="checklist-bar" id="checklist-bar"></div>
+      <div class="checklist-grid" id="checklist-grid"></div>
+    </div>
+
+    <section class="launch-site-section" aria-labelledby="launch-site-title">
+      <div class="launch-site-heading">
+        <svg class="launch-site-pin" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5M12,2A7,7 0 0,1 19,9C19,14.25 12,22 12,22C12,22 5,14.25 5,9A7,7 0 0,1 12,2M12,4A5,5 0 0,0 7,9C7,10 7,12 12,18.71C17,12 17,10 17,9A5,5 0 0,0 12,4Z"/>
+        </svg>
+        <h2 id="launch-site-title" class="launch-site-title">发射场</h2>
+      </div>
+      <div class="launch-site-layout">
+        <div class="launch-site-map-card">
+          <div class="launch-site-map-badge">
+            <span class="launch-site-badge-dot"></span>
+            <span id="launch-site-trajectory-label">总体轨迹</span>
+          </div>
+          <div class="launch-site-map-stage">
+            <div id="launch-site-map" class="launch-site-map" role="img" aria-label="Starbase 发射场地图"></div>
+            <div class="launch-site-overlays" aria-hidden="true">
+              <div class="launch-site-wedge-wrap" id="launch-site-wedge" style="--launch-azimuth: 90deg">
+                <div class="launch-site-wedge launch-site-wedge--base"></div>
+                <div class="launch-site-wedge launch-site-wedge--accent"></div>
+              </div>
+              <div class="launch-site-pad-marker">
+                <div class="launch-site-pad-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.13 22.19L11.5 18.36C13.07 17.78 14.54 17 15.9 16.09L13.13 22.19M5.64 12.5L1.81 10.87L7.91 8.1C7 9.46 6.22 10.93 5.64 12.5M21.61 2.39C21.61 2.39 16.66 .269 11 5.93C8.81 8.12 7.5 10.53 6.65 12.64C6.37 13.39 6.56 14.21 7.11 14.77L9.24 16.89C9.79 17.45 10.61 17.63 11.36 17.35C13.5 16.53 15.88 15.19 18.07 13C23.73 7.34 21.61 2.39 21.61 2.39M14.54 9.46C13.76 8.68 13.76 7.41 14.54 6.63S16.59 5.85 17.37 6.63C18.14 7.41 18.15 8.68 17.37 9.46C16.59 10.24 15.32 10.24 14.54 9.46M8.88 16.53L7.47 15.12L8.88 16.53M6.24 22L9.88 18.36C9.54 18.27 9.21 18.12 8.91 17.91L4.83 22H6.24M2 22H3.41L8.18 17.24L6.76 15.83L2 20.59V22M2 19.17L6.09 15.09C5.88 14.79 5.73 14.47 5.64 14.12L2 17.76V19.17Z"/></svg>
+                  <span class="launch-site-pad-caret"></span>
+                </div>
+              </div>
+            </div>
+            <div class="launch-site-compass" id="launch-site-compass">
+              <div class="launch-site-compass-dial">
+                <div class="launch-site-compass-ring"></div>
+                <div class="launch-site-compass-needle" id="launch-site-compass-needle">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.13 22.19L11.5 18.36C13.07 17.78 14.54 17 15.9 16.09L13.13 22.19M5.64 12.5L1.81 10.87L7.91 8.1C7 9.46 6.22 10.93 5.64 12.5M21.61 2.39C21.61 2.39 16.66 .269 11 5.93C8.81 8.12 7.5 10.53 6.65 12.64C6.37 13.39 6.56 14.21 7.11 14.77L9.24 16.89C9.79 17.45 10.61 17.63 11.36 17.35C13.5 16.53 15.88 15.19 18.07 13C23.73 7.34 21.61 2.39 21.61 2.39M14.54 9.46C13.76 8.68 13.76 7.41 14.54 6.63S16.59 5.85 17.37 6.63C18.14 7.41 18.15 8.68 17.37 9.46C16.59 10.24 15.32 10.24 14.54 9.46M8.88 16.53L7.47 15.12L8.88 16.53M6.24 22L9.88 18.36C9.54 18.27 9.21 18.12 8.91 17.91L4.83 22H6.24M2 22H3.41L8.18 17.24L6.76 15.83L2 20.59V22M2 19.17L6.09 15.09C5.88 14.79 5.73 14.47 5.64 14.12L2 17.76V19.17Z"/></svg>
+                </div>
+              </div>
+              <div class="launch-site-compass-labels">
+                <span>NE</span><span>SE</span>
+              </div>
+              <div class="launch-site-compass-dir">
+                <p class="launch-site-dir-from" id="launch-site-wind-from">下水</p>
+                <p class="launch-site-dir-to" id="launch-site-wind-to">东部</p>
+              </div>
+            </div>
+          </div>
+          <div class="launch-site-pad-panel launch-site-pad-panel--desktop">
+            <a class="launch-site-pad-link" id="launch-site-pad-link" href="https://www.nextspaceflight.com/locations/?pad=244" target="_blank" rel="noopener">
+              <span id="launch-site-pad-name">发射台 2</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+            </a>
+            <p class="launch-site-pad-loc" id="launch-site-pad-loc">美国德克萨斯州星基</p>
+          </div>
+        </div>
+        <div class="launch-site-pad-panel launch-site-pad-panel--mobile">
+          <a class="launch-site-pad-link" id="launch-site-pad-link-m" href="https://www.nextspaceflight.com/locations/?pad=244" target="_blank" rel="noopener">
+            <span id="launch-site-pad-name-m">Pad 2</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+          </a>
+          <p class="launch-site-pad-loc" id="launch-site-pad-loc-m">Starbase, Texas, USA</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="launch-flow-wrap">
+      <h3 class="subsection-title">发射流程</h3>
+      <div class="launch-flow-bar" id="launch-flow-bar">
+        <div class="flow-step pending" data-step="range">靶场准备</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step pending" data-step="load">推进剂加注</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step pending" data-step="chill">引擎预冷</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step pending" data-step="liftoff">起飞</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step pending" data-step="maxq">最大动压</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step pending" data-step="sep">级间分离</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step pending" data-step="booster">助推回收</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step pending" data-step="ship">星舰再入</div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step pending" data-step="splash">溅落</div>
+      </div>
+    </div>
+
+    <div id="mission-list" class="mission-list"></div>
+
+    <div class="missions-timeline-block">
+      <div class="page-layout">
+        <aside class="mission-sidebar">
+          <div class="info-card">
+            <h3 class="card-title">火箭</h3>
+            <p class="card-highlight">Starship-Super Heavy <span class="ver">v3</span></p>
+            <ul class="card-list">
+              <li><span>高度</span><span>124.4 m</span></li>
+              <li><span>直径</span><span>9 m</span></li>
+              <li><span>起飞推力</span><span>80,800 kN</span></li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3 class="card-title">发射台</h3>
+            <p class="card-highlight">Pad 2</p>
+            <p class="card-sub">Starbase, Texas · 博卡奇卡</p>
+          </div>
+          <div class="info-card monitor-card">
+            <div class="monitor-head">
+              <h3 class="card-title">NXSF 实时监测</h3>
+              <span class="monitor-dot offline" id="monitor-dot"></span>
+            </div>
+            <p class="monitor-status" id="monitor-status">连接中…</p>
+            <p class="monitor-last-sync" id="monitor-last-sync"></p>
+            <div class="monitor-fields" id="monitor-fields"></div>
+            <div class="monitor-actions">
+              <button type="button" class="btn-monitor" id="btn-monitor-refresh">立即刷新</button>
+              <button type="button" class="btn-monitor btn-monitor-apply" id="btn-monitor-apply">同步到页面</button>
+              <button type="button" class="btn-monitor" id="btn-monitor-preview">下载配置预览</button>
+            </div>
+            <p class="monitor-preview-hint" id="monitor-preview-hint"></p>
+            <h4 class="monitor-changes-title">变化记录</h4>
+            <div class="monitor-changes" id="monitor-changes"></div>
+          </div>
+        </aside>
+
+        <div class="main-column">
+          <header class="launch-hero">
+            <p class="hero-crumb">SpaceX / <span id="mission-flight-id">Starship Flight 12</span></p>
+            <h1 class="hero-title" id="mission-title">Starship Flight 12</h1>
+            <p class="hero-sub" id="mission-subtitle">Starship-Super Heavy v3 · 星舰第 12 次试飞</p>
+            <div class="go-row">
+              <div class="go-badge" id="go-badge">
+                <span class="go-pct" id="go-pct">55%</span>
+                <span class="go-text">准许发射</span>
+              </div>
+              <div class="window-info">
+                <div class="window-item">
+                  <span class="window-label">窗口开启 (GMT)</span>
+                  <span class="window-val" id="window-open">22:30</span>
+                </div>
+                <div class="window-item">
+                  <span class="window-label">窗口关闭 (GMT)</span>
+                  <span class="window-val" id="window-close">00:00</span>
+                </div>
+              </div>
+            </div>
+            <div class="nx-countdown" id="nx-countdown" aria-live="polite" aria-atomic="true">
+              <span class="nx-t-label" id="nx-t-label">T-</span>
+              <div class="nx-blocks">
+                <div class="nx-unit"><div class="nx-digits" id="cd-hours">00</div><span class="nx-unit-label">HOURS</span></div>
+                <span class="nx-sep">:</span>
+                <div class="nx-unit"><div class="nx-digits" id="cd-mins">00</div><span class="nx-unit-label">MINS</span></div>
+                <span class="nx-sep">:</span>
+                <div class="nx-unit"><div class="nx-digits" id="cd-secs">00</div><span class="nx-unit-label">SECS</span></div>
+              </div>
+              <p class="nx-countdown-target" id="nx-countdown-target">距起飞</p>
+            </div>
+            <div class="liftoff-times">
+              <div class="liftoff-block">
+                <span class="liftoff-label-sm">Liftoff (GMT)</span>
+                <span class="liftoff-val" id="liftoff-gmt">22:30:00</span>
+                <span class="liftoff-date" id="liftoff-date-gmt">—</span>
+              </div>
+              <div class="liftoff-block">
+                <span class="liftoff-label-sm">北京时间</span>
+                <span class="liftoff-val" id="liftoff-local">06:30:00</span>
+                <span class="liftoff-date" id="liftoff-date-local">—</span>
+              </div>
+            </div>
+            <p class="mission-meta" id="mission-meta"></p>
+            <div class="status-grid">
+              <div class="countdown-item countdown-wait hidden" id="wait-panel">
+                <span class="label">距流程开始</span>
+                <span id="countdown-to-start" class="value value-sm">--</span>
+              </div>
+              <div class="status-card" id="sim-panel">
+                <span class="label">时序 T+/T-</span>
+                <span id="sim-time" class="value">—</span>
+                <span id="wall-time" class="value-sub">—</span>
+              </div>
+              <div class="status-card">
+                <span class="label">当前阶段</span>
+                <span id="current-phase" class="value value-sm">—</span>
+              </div>
+              <div class="status-card">
+                <span class="label">整体进度</span>
+                <span id="progress-percent" class="value">0%</span>
+              </div>
+              <div class="status-badge" id="flight-status">—</div>
+            </div>
+            <div class="controls">
+              <button id="btn-pause" type="button" class="btn-primary">暂停</button>
+              <button id="btn-reset" type="button" class="btn-ghost">重置</button>
+              <span class="live-hint" id="live-hint">流程开始后按真实时间 1:1 推进</span>
+            </div>
+            <div class="watch-links watch-links--mission" id="watch-links-mission"></div>
+          </header>
+          <main class="timeline-section">
+            <h2 class="section-title">飞行时序</h2>
+            <p class="timeline-scroll-hint" id="timeline-scroll-hint">向下滚动 · 横向展开完整时序</p>
+            <div class="timeline-scroll-stage" id="timeline-scroll-stage">
+              <div class="timeline-sticky">
+                <div class="timeline-expand" id="timeline-expand">
+                  <div class="timeline-wrapper">
+                    <div class="liftoff-marker"><span class="liftoff-label" id="liftoff-label">起飞</span></div>
+                    <div class="axis-container">
+                      <div class="axis-track">
+                        <div class="axis-scroll-progress" id="axis-scroll-progress"></div>
+                        <div class="axis-progress" id="axis-progress"></div>
+                        <div class="axis-nodes" id="axis-nodes"></div>
+                      </div>
+                      <div class="timeline-callout-slot">
+                        <div class="timeline-callout" id="timeline-callout" hidden></div>
+                      </div>
+                      <div class="axis-scale">
+                        <span id="scale-start"></span>
+                        <span id="scale-liftoff"></span>
+                        <span id="scale-end"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <section class="detail-section">
+            <div class="detail-toolbar">
+              <h2 class="section-title">流程事件表</h2>
+              <span class="evt-legend resize-hint">
+                <span class="evt-legend-item evt-legend--upcoming">即将进行</span>
+                <span class="evt-legend-item evt-legend--executed">已执行</span>
+                <span class="evt-legend-item evt-legend--not-executed">未执行</span>
+                <span class="evt-legend-item evt-legend--canceled" title="官方取消，本试飞跳过该测试步骤">执行取消</span>
+                · 拖动上沿调高度
+              </span>
+              <button type="button" class="btn-reset-size" id="btn-reset-table-size">恢复默认</button>
+            </div>
+            <div class="table-panel" id="table-panel">
+              <div class="table-resize-bar" id="table-resize-bar"></div>
+              <div class="table-wrapper" id="table-wrapper">
+                <table class="event-table" id="event-table">
+                  <colgroup>
+                    <col id="col-0" style="width:56px">
+                    <col id="col-1" style="width:300px">
+                    <col id="col-2" style="width:120px">
+                    <col id="col-3" style="width:160px">
+                    <col id="col-4">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th data-col="0">序号<span class="col-resizer" data-col="0"></span></th>
+                      <th data-col="1">事件名称<span class="col-resizer" data-col="1"></span></th>
+                      <th data-col="2">时序<span class="col-resizer" data-col="2"></span></th>
+                      <th data-col="3">北京时间<span class="col-resizer" data-col="3"></span></th>
+                      <th data-col="4">备注<span class="col-resizer" data-col="4"></span></th>
+                    </tr>
+                  </thead>
+                  <tbody id="event-table-body"></tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 飞行器 ========== -->
+  <section id="page-vehicles" class="page">
+    <div class="page-intro">
+      <h2>飞行器 · Hardware</h2>
+      <p>
+        数据来自
+        <a href="https://www.nextspaceflight.com/starship/" target="_blank" rel="noopener">Next Spaceflight Starship</a>
+        专页 · Ship / Booster / 全栈
+      </p>
+      <button type="button" class="btn-ghost" id="btn-refresh-nxsf">刷新 NXSF 数据</button>
+    </div>
+    <p class="vehicles-meta" id="vehicles-meta"></p>
+    <div class="vehicles-toolbar">
+      <input type="search" class="vehicles-search" id="vehicles-search" placeholder="搜索编号，如 Ship 39、助推器19…" aria-label="搜索飞行器">
+      <div class="hw-filters">
+      <button type="button" class="hw-filter active" data-hw-filter="all">全部</button>
+      <button type="button" class="hw-filter" data-hw-filter="stack">全栈</button>
+      <button type="button" class="hw-filter" data-hw-filter="booster">助推器</button>
+      <button type="button" class="hw-filter" data-hw-filter="ship">舰体</button>
+      <span class="hw-filter-sep">|</span>
+      <button type="button" class="hw-status-filter active" data-status-filter="all">全部状态</button>
+      <button type="button" class="hw-status-filter" data-status-filter="Active">活跃</button>
+      <button type="button" class="hw-status-filter" data-status-filter="Expended">耗尽</button>
+      <button type="button" class="hw-status-filter" data-status-filter="Destroyed">被毁</button>
+      <button type="button" class="hw-status-filter" data-status-filter="Retired">退役</button>
+      </div>
+    </div>
+    <div id="vehicles-grid" class="vehicles-grid"></div>
+  </section>
+
+  <!-- ========== 封路 ========== -->
+  <section id="page-closures" class="page">
+    <div class="page-intro">
+      <h2>封路 & 海滩关闭</h2>
+      <p>
+        数据来自
+        <a href="https://www.nextspaceflight.com/starship/" target="_blank" rel="noopener">NXSF Road Updates</a>
+        与
+        <a href="https://www.starbase.texas.gov/beach-road-access" target="_blank" rel="noopener">starbase.texas.gov</a>
+      </p>
+      <button type="button" class="btn-ghost" id="btn-refresh-closures">刷新公告</button>
+      <button type="button" class="btn-ghost" id="btn-sync-closures-hint" title="请运行 npm run sync:closures">同步 starbase</button>
+    </div>
+    <div id="closures-list" class="closures-list"></div>
+  </section>
+
+  <footer class="site-footer">
+    <span>星舰飞行时序展示站 · 任务数据 <a href="https://www.nextspaceflight.com/launches/" target="_blank" rel="noopener">Next Spaceflight</a> · 非 SpaceX 官方</span>
+  </footer>
+
+  <script src="data/config.js"></script>
+  <script src="site-utils.js"></script>
+  <script src="data/closures.js"></script>
+  <script src="data/nxsf-vehicles.js"></script>
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="launch-site.js"></script>
+  <script src="script.js"></script>
+  <script src="nxsf-starship-ui.js"></script>
+  <script src="timeline-scroll.js"></script>
+  <script src="app.js"></script>
+  <script src="monitor-client.js"></script>
+</body>
+</html>
