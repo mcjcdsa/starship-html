@@ -52,14 +52,14 @@ npm run dev
 
 ### 首次发布步骤
 
-1. 在 GitHub 新建仓库（例如 `starship`），将本项目推送到 **`main`** 分支：
+1. 本仓库远程地址：
+
+   `https://github.com/mcjcdsa/starship-html.git`
+
+   本地首次关联示例：
 
    ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Starship site"
-   git branch -M main
-   git remote add origin https://github.com/<你的用户名>/starship.git
+   git remote add origin https://github.com/mcjcdsa/starship-html.git
    git push -u origin main
    ```
 
@@ -70,8 +70,8 @@ npm run dev
    - `npm run build:pages`：生成飞行器/封路数据并输出到 `_site/`
    - 发布 `_site` 到 Pages
 
-4. 几分钟后访问：`https://<你的用户名>.github.io/<仓库名>/`  
-   示例：`https://<你的用户名>.github.io/starship/#missions`
+4. 几分钟后访问：**https://mcjcdsa.github.io/starship-html/**  
+   示例：`https://mcjcdsa.github.io/starship-html/#missions`
 
 ### 本地预检 Pages 构建
 
